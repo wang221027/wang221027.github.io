@@ -4492,7 +4492,7 @@ blockquote {
     padding-left: 0;
   }
 }
-.tf-logo-link img {
+.tf-logo-link img, .tf-footer-logo img {
   width: 150px;
 }
 /*End Comment Section*/
@@ -4500,6 +4500,9 @@ blockquote {
     border: none;
     height: 450px;
     width: 100%;
+}
+.gai-text {
+  font-size: 24px;
 }
 /*Start Preloader*/
 #tf-preloader {
