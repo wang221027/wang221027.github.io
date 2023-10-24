@@ -4492,7 +4492,9 @@ blockquote {
     padding-left: 0;
   }
 }
-
+.tf-logo-link img {
+  width: 150px;
+}
 /*End Comment Section*/
 .tf-google-map iframe {
     border: none;
