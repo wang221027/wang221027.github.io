@@ -40,7 +40,9 @@
 	color: #6d61ea !important;
 	font-weight: 700;
 }
-
+.logo-index {
+	font-size: 14px;
+}
 .page .nav-left .navDiv .nav-list ul .nav-tab {
 	list-style: none;
 }
