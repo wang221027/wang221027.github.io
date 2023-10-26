@@ -34,95 +34,49 @@
 
 <body>
     <h1>面试题集合</h1>
-    <h4>集合一：</h4>
+    <h4>案例一：</h4>
     <p>
         <span>1、vue的双向绑定原理是什么？里面的关键点在哪里？</span>
+        <span>答案：1、vue的双向绑定原理是通过数据劫持和发布-订阅模式实现的。关键点在于使用Object.defineProperty()方法劫持对象的属性，当属性值发生变化时，触发订阅者的更新操作。</span>
+
         <span>2、实现水平垂直居中的方式？</span>
-        <span>3、常用伪元素有哪一些？</span>
-        <span>4、移动端如何适配不同屏幕尺寸？</span>
-        <span>5、本地存储有哪一些？他们三者有什么区别？</span>
-        <span>6、JS的数据类型？如何判断js的数据类型?</span>
-        <span>7、说一下ES6的新特性有哪些？</span>
-        <span>8、Let、const、var三者有什么区别？</span>
-        <span>9、数组去重有哪些办法？ES6新增构造函数set，利用set具有天然去重功能数组迭代</span>
-        <span>10、说一下深拷贝和浅拷贝，如何自己实现一个深拷贝？</span>
-        <span>11、Vue的生命周期有哪一些？说一下它们每个阶段做什么操作？</span>
-        <span>12、组件通讯方式有哪一些？</span>
-        <span>13、Vuex有几个属性及作用？</span>
-        <span>14、Vue的监听属性和计算属性有什么区别？</span>
-        <span>15、说一下防抖和节流。怎么实现？</span>
-        <span>16、Vue的导航守卫有哪一些？</span>
-        <span>17、你的登录拦截怎么实现的？</span>
-        <span>18、有用过图表吗？用的多吗？</span>
-        <span>19、闭包是什么？如何实现？</span>
-        <span>20、Vue2.0和vue3.0有什么区别？</span>
-        <span>21、Vue常用的指令有哪些？</span>
-        <span>22、v-If和v-show有什么区别？</span>
-        <span>23、v-for为什么要加一个key？</span>
-        <span>24、你是如何封装一个组件的？</span>
-        <span>25、有自己从0到1搭建过项目吗？</span>
-        <span>26、有用过uni-app吗？</span>
-        <span>27、你会写后台吗？有搞过服务端渲染吗？</span>
-        <span>28、说一下你项目中遇到的难点，如何解决？</span>
-        <span>29、Url到浏览器的一个过程有哪些步骤？</span>
-        <span>30、如何实现小程序的request封装及拦截？</span>
-        <span>31、在vue的项目应用中，不使用框架，怎么封装？</span>
-        <span>32、什么是Js原型？原型链是什么？</span>
-        <span>33、组件通讯方式有哪些？</span>
-        <span>34、用闭包的原理做过哪些？</span>
-        <span>35、作用域是什么？</span>
-        <span>36、操作数组的方式有哪些？</span>
-        <span>37、0.1 + 0.2 等于 0.3吗？为什么？如何解决？</span>
-        <span>38、keep-alive是什么？有哪几个生命周期阶段？</span>
-        <span>39、判断一个变量是否是数组，有哪些办法？</span>
-        <span>40、判断一个变量是否是对象，有哪些办法？</span>
-        <span>41、对象/数组常用方法有哪些？</span>
-        <span>42、创建一个空数组/空对象有哪些方式？</span>
-        <span>43、哪些遍历方式会改变原数组？</span>
-        <span>44、Set和Map各是什么？</span>
-        <span>45、介绍一下promise。</span>
         <span>
-            46、Promise通常会解决三种问题
-            (1)链式回调(2)同时发起几个异步请求，谁先有结果就拿谁的(3)发起多个请求，等到所有请求后再做下一步处理
-            这三种方式promise是怎么处理的？
-        </span>
-        <span>47、如何改变一个函数a的上下文？</span>
-        <span>48、Call和replay有什么区别？</span>
-        <span>49、Evenbus是什么东西？</span>
-        <span>50、Vue中普通的生命周期大概有哪些？</span>
-        <span>51、父子组件生命周期执行顺序是怎么样的？</span>
-        <span>52、mixins有几个生命周期阶段？</span>
-        <span>53、弹性布局，一行两列，一列固定宽，如何实现？</span>
-    </p>
-    <h4>集合一答案：</h4>
-    <p>
-        <span>1、vue的双向绑定原理是通过数据劫持和发布-订阅模式实现的。关键点在于使用Object.defineProperty()方法劫持对象的属性，当属性值发生变化时，触发订阅者的更新操作。</span>
-        <span>2、实现水平垂直居中的方式有多种，常见的方式有：
+            答案：2、实现水平垂直居中的方式有多种，常见的方式有：
             使用flex布局，设置父容器的display为flex，然后使用justify-content和align-items属性来实现水平垂直居中。
             使用绝对定位，设置父容器的position为relative，子容器的position为absolute，然后使用top、bottom、left、right和margin属性来实现水平垂直居中。
             使用transform属性，设置父容器的position为relative，子容器的position为absolute，然后使用transform属性的translateX和translateY方法来实现水平垂直居中。
         </span>
+        <span>3、常用伪元素有哪一些？</span>
         <span>
+            答案：
             3、常用的伪元素有以下几种：::before：在元素内容前插入生成的内容。::after：在元素内容后插入生成的内容::first-letter：
             选择元素内容的第一个字母::first-line：选择元素内容的第一行::selection：选择用户选中的文本部分
         </span>
-        <span>4、移动端适配不同屏幕尺寸可以使用以下几种方式：
+        <span>4、移动端如何适配不同屏幕尺寸？</span>
+        <span>
+            答案：4、移动端适配不同屏幕尺寸可以使用以下几种方式：
             使用百分比单位或者vw、vh单位来设置元素的宽度和高度。
             使用媒体查询来根据不同屏幕尺寸设置不同的样式。
             使用rem单位来设置根元素的字体大小，然后使用rem单位来设置其他元素的尺寸。
         </span>
+        <span>5、本地存储有哪一些？他们三者有什么区别？</span>
         <span>
+            答案：
             5、常见的本地存储方式有以下三种：
             localStorage：可以存储较大量的数据，数据会一直保存在浏览器中，除非手动删除。
             sessionStorage：可以存储较大量的数据，数据只在当前会话中有效，关闭浏览器或者标签页后数据会被清除。
-            cookies：可以存储较小量的数据，数据会在浏览器和服务器之间传递，有一定的安全性限制。</span>
+            cookies：可以存储较小量的数据，数据会在浏览器和服务器之间传递，有一定的安全性限制。
+        </span>
+        <span>6、JS的数据类型？如何判断js的数据类型?</span>
         <span>
+            答案：
             6、JavaScript的数据类型有以下几种：
             基本数据类型：包括字符串（String）、数字（Number）、布尔值（Boolean）、null、undefined。
             引用数据类型：包括对象（Object）、数组（Array）、函数（Function）。
             判断JavaScript的数据类型可以使用typeof运算符或者使用Object.prototype.toString.call()方法。
         </span>
-        <span>
+        <span>7、说一下ES6的新特性有哪些？</span>
+        <span>答案：
             7、ES6的新特性包括：
             let和const关键字：用于声明块级作用域的变量。
             箭头函数：提供了更简洁的函数定义方式。
@@ -133,20 +87,23 @@
             Promise对象：用于处理异步操作。
             类和模块：提供了更面向对象的编程方式。
         </span>
-        <span>8、let、const、var三者的区别如下：
+        <span>8、Let、const、var三者有什么区别？</span>
+        <span>答案：8、let、const、var三者的区别如下：
             - let和const声明的变量具有块级作用域，而var声明的变量具有函数作用域。
             - let和const声明的变量不会被提升，而var声明的变量会被提升。
             - let和const声明的变量不允许重复声明，而var声明的变量可以重复声明。
             - const声明的变量必须在声明时初始化，并且不能再次赋值。
         </span>
-        <span>
+        <span>9、数组去重有哪些办法？ES6新增构造函数set，利用set具有天然去重功能数组迭代</span>
+        <span>答案：
             9、数组去重的方法有以下几种：
             - 使用Set：ES6新增的Set数据结构具有天然的去重功能，可以将数组转换为Set，然后再转换回数组。
             - 使用filter和indexOf：遍历数组，使用filter方法和indexOf方法判断元素是否已经存在于新数组中。
             - 使用reduce和includes：遍历数组，使用reduce方法和includes方法判断元素是否已经存在于新数组中。
             - 使用ES6的新特性：使用扩展运算符和Set结构来去重，例如`[...new Set(array)]`。
         </span>
-        <span>
+        <span>10、说一下深拷贝和浅拷贝，如何自己实现一个深拷贝？</span>
+        <span>答案：
             10、深拷贝和浅拷贝是对于对象和数组来说的：
             - 浅拷贝只复制对象或数组的引用，新对象和原对象共享同一块内存空间，修改其中一个会影响到另一个。
             - 深拷贝会创建一个完全独立的对象或数组，新对象和原对象不共享内存空间，修改其中一个不会影响到另一个。
@@ -156,7 +113,8 @@
             - 使用递归：递归遍历对象或数组的每个属性，逐个进行拷贝。对于对象，可以使用Object.assign或者展开运算符来拷贝属性；对于数组，可以使用
             slice方法来拷贝。
         </span>
-        <span>
+        <span>11、Vue的生命周期有哪一些？说一下它们每个阶段做什么操作？</span>
+        <span>答案：
             11、Vue的生命周期包括以下几个阶段：
             - beforeCreate：实例刚刚被创建，属性和方法还未初始化，无法访问data、computed、methods等选项。
             - created：实例已经创建完成，属性和方法已经初始化完成，可以访问data、computed、methods等选项。
@@ -167,14 +125,17 @@
             - beforeDestroy：实例销毁之前调用，可以进行一些清理操作。
             - destroyed：实例已经销毁，所有的事件监听和定时器都已经被移除。
         </span>
-        <span>
+
+        <span>12、组件通讯方式有哪一些？</span>
+        <span>答案：
             12、组件通讯方式有以下几种：
             - 父子组件通讯：父组件通过props向子组件传递数据，子组件通过emit触发事件向父组件传递数据。
             - 兄弟组件通讯：可以通过共同的父组件作为中介，将数据传递给父组件，再通过props传递给另一个兄弟组件。
             - 跨级组件通讯：可以使用provide和inject来在组件树中跨级传递数据。
             - 使用Vuex：Vuex是Vue的官方状态管理库，可以用于管理全局的状态，实现组件之间的通讯。
         </span>
-        <span>
+        <span>13、Vuex有几个属性及作用？</span>
+        <span>答案：
             13、Vuex有以下几个属性及作用：
             - state：用于存储全局的状态，类似于组件中的data。
             - getters：用于对state进行计算或过滤，类似于组件中的computed。
@@ -182,85 +143,150 @@
             - actions：用于处理异步操作或批量的mutations操作，可以包含任意异步操作。
             - modules：用于将store分割成模块，每个模块都有自己的state、mutations、actions等。
         </span>
-        <span>
+        <span>14、Vue的监听属性和计算属性有什么区别？</span>
+        <span>答案：
             14、Vue的监听属性和计算属性的区别如下：
             - 监听属性（watch）：用于监听特定的数据变化，并在数据变化时执行相应的操作。可以监听单个属性或整个对象，可以执行异步操作。
             -计算属性（computed）：用于根据已有的数据计算出新的数据，并将计算结果缓存起来，只有依赖的数据发生变化时才会重新计算。
             计算属性是基于响应式依赖进行缓存的，只有相关的依赖发生变化时才会重新计算。
         </span>
-        <span>
+        <span>15、说一下防抖和节流。怎么实现？</span>
+        <span>答案：
             15、防抖（debounce）和节流（throttle）是用于限制函数执行频率的方法：
             - 防抖：在事件触发后的一段时间内，如果再次触发事件，将重新计时，直到一段时间内没有再次触发事件，才会执行函数。
             常用于输入框输入时的搜索功能，避免频繁发送请求。
             - 节流：在一段时间内只能触发一次函数执行，无论触发频率有多高。常用于滚动事件、resize事件等高频触发的事件，减少函数执行的频率。
             实现防抖可以使用setTimeout和clearTimeout来延迟函数的执行，实现节流可以使用setTimeout和clearTimeout来控制函数的执行间隔。
         </span>
-        <span>
+        <span>16、Vue的导航守卫有哪一些？</span>
+        <span>答案：
             16、Vue的导航守卫包括全局守卫、路由独享守卫和组件内守卫。全局守卫包括beforeEach、beforeResolve和afterEach；路由独享守
             卫包括beforeEnter；组件内守卫包括beforeRouteEnter、beforeRouteUpdate和beforeRouteLeave。
         </span>
-        <span>17、登录拦截一般实现方式是在路由守卫中判断用户是否已登录，如果未登录则跳转到登录页面。</span>
-        <span>18、我用过ECharts和Highcharts，用的还比较多。</span>
-        <span>
+        <span>17、你的登录拦截怎么实现的？</span>
+        <span>答案：17、登录拦截一般实现方式是在路由守卫中判断用户是否已登录，如果未登录则跳转到登录页面。</span>
+        <span>18、有用过图表吗？用的多吗？</span>
+        <span>答案：18、我用过ECharts和Highcharts，用的还比较多。</span>
+        <span>19、闭包是什么？如何实现？</span>
+        <span>答案：
             19、闭包是指有权访问另一个函数作用域中变量的函数。在JavaScript中，闭包可以通过函数嵌套来实现。一个函数内部定义了另一个函数，
             并且内部函数可以访问外部函数的变量，这个内部函数就是一个闭包。
         </span>
-        <span>
+        <span>20、Vue2.0和vue3.0有什么区别？</span>
+        <span>答案：
             20、Vue3.0相比Vue2.0有很多改进，主要包括性能优化、CompositionAPI、TypeScript支持、全局API修改等。其中最大的改进是使用Proxy
             代替Object.defineProperty来实现响应式数据，这使得Vue3.0的性能得到了很大的提升。
         </span>
-        <span>21、Vue常用的指令包括v-if、v-show、v-for、v-bind、v-on、v-model等。</span>
-        <span>22、v-if和v-show都可以控制元素的显示和隐藏，但是v-if是将元素从DOM中删除，而v-show是将元素的display属性设置为none。</span>
-        <span>23、v-for需要加一个key是为了帮助Vue识别每个节点的身份，从而在更新虚拟DOM时可以更高效地比较节点的差异，提高性能。</span>
-        <span>24、封装一个组件一般需要考虑组件的props、data、methods、computed、watch等属性，还需要考虑组件的生命周期函数和样式。</span>
-        <span>25、我从0到1搭建过多个项目，包括前端项目和后端项目。</span>
-        <span>26、我用过uni-app，它是一个基于Vue的跨平台开发框架，可以快速开发小程序、H5、App等多个平台的应用。</span>
-        <span>27、我会写后台，但是没有搞过服务端渲染。</span>
-        <span>28、我在项目中遇到的难点主要是性能问题和跨域问题，我通过优化代码和使用代理服务器等方式解决了这些问题。</span>
-        <span>
+        <span>21、Vue常用的指令有哪些？</span>
+        <span>答案：21、Vue常用的指令包括v-if、v-show、v-for、v-bind、v-on、v-model等。</span>
+        <span>22、v-If和v-show有什么区别？</span>
+        <span>答案：22、v-if和v-show都可以控制元素的显示和隐藏，但是v-if是将元素从DOM中删除，而v-show是将元素的display属性设置为none。</span>
+        <span>23、v-for为什么要加一个key？</span>
+        <span>答案：23、v-for需要加一个key是为了帮助Vue识别每个节点的身份，从而在更新虚拟DOM时可以更高效地比较节点的差异，提高性能。</span>
+        <span>24、你是如何封装一个组件的？</span>
+        <span>答案：24、封装一个组件一般需要考虑组件的props、data、methods、computed、watch等属性，还需要考虑组件的生命周期函数和样式。</span>
+        <span>25、有自己从0到1搭建过项目吗？</span>
+        <span>答案：25、我从0到1搭建过多个项目，包括前端项目和后端项目。</span>
+        <span>26、有用过uni-app吗？</span>
+        <span>答案：26、我用过uni-app，它是一个基于Vue的跨平台开发框架，可以快速开发小程序、H5、App等多个平台的应用。</span>
+        <span>27、你会写后台吗？有搞过服务端渲染吗？</span>
+        <span>答案：27、我会写后台，但是没有搞过服务端渲染。</span>
+        <span>28、说一下你项目中遇到的难点，如何解决？</span>
+        <span>答案：28、我在项目中遇到的难点主要是性能问题和跨域问题，我通过优化代码和使用代理服务器等方式解决了这些问题。</span>
+        <span>29、Url到浏览器的一个过程有哪些步骤？</span>
+        <span>答案：
             29、Url到浏览器的一个过程包括DNS解析、建立TCP连接、发送HTTP请求、服务器响应HTTP请求、浏览器解析HTML、构建DOM树、构建CSSOM树、
             合并DOM和CSSOM树、渲染页面、执行JavaScript等步骤。
         </span>
-        <span>
+        <span>30、如何实现小程序的request封装及拦截？</span>
+        <span>答案：
             30、小程序的request封装及拦截可以通过封装一个wx.request的函数来实现，然后在这个函数中添加拦截器，例如在请求前添加loading效果，
             在请求后添加错误处理等。
         </span>
-        <span>
+        <span>31、在vue的项目应用中，不使用框架，怎么封装？</span>
+        <span>答案：
             31、如果不使用框架封装Vue项目，可以手动创建组件、指令和过滤器，使用原生JavaScript进行事件绑定和DOM操作，手动管理组件的生命周期等。
             可以按照Vue的设计思想和规范，自己实现数据绑定、组件通信等功能。
         </span>
-        <span>
+        <span>32、什么是Js原型？原型链是什么？</span>
+        <span>答案：
             32、JavaScript的原型是每个对象都具有的属性，它指向另一个对象，这个对象称为原型对象。原型链是JavaScript中对象之间的关系，每个对象
             都有一个原型，通过原型链可以访问到其他对象的属性和方法。
         </span>
-        <span>33、组件通讯方式有props和$emit、$parent和$children、$attrs和$listeners、provide和inject、vuex、事件总线等。</span>
-        <span>34、使用闭包可以实现许多功能，比如封装私有变量、实现模块化、实现函数柯里化等。</span>
-        <span>
+        <span>33、组件通讯方式有哪些？</span>
+        <span>答案：33、组件通讯方式有props和$emit、$parent和$children、$attrs和$listeners、provide和inject、vuex、事件总线等。</span>
+
+        <span>34、用闭包的原理做过哪些？</span>
+        <span>答案：34、使用闭包可以实现许多功能，比如封装私有变量、实现模块化、实现函数柯里化等。</span>
+
+        <span>35、作用域是什么？</span>
+        <span>答案：
             35、作用域是指在程序中定义变量的区域，它决定了变量的可见性和生命周期。作用域分为全局作用域和局部作用域，JavaScript中的作用域是词
             法作用域，即由代码的位置决定变量的作用域。
         </span>
-        <span>36、操作数组的方式有push、pop、shift、unshift、splice、slice、concat、join、map、filter、reduce等。</span>
-        <span>
+        <span>36、操作数组的方式有哪些？</span>
+        <span>答案：36、操作数组的方式有push、pop、shift、unshift、splice、slice、concat、join、map、filter、reduce等。</span>
+
+        <span>37、0.1 + 0.2 等于 0.3吗？为什么？如何解决？</span>
+        <span>答案：
             37、0.1 + 0.2 不等于 0.3，这是因为JavaScript中使用IEEE 754标准来表示浮点数，而浮点数的精度有限，会导致精度丢失。可以通过将浮点
             数转换为整数进行计算，然后再将结果转换为浮点数来解决这个问题。
         </span>
-        <span>
+        <span>38、keep-alive是什么？有哪几个生命周期阶段？</span>
+        <span>答案：
             38、keep-alive是Vue的一个内置组件，用于缓存动态组件或者路由组件，可以在组件切换时保留组件的状态，提高组件的性能。它有两个生命周
             期阶段，分别是activated和deactivated。
         </span>
-        <span>39、判断一个变量是否是数组可以使用Array.isArray()方法、instanceof操作符、Object.prototype.toString.call()方法等。</span>
-        <span>40、判断一个变量是否是对象可以使用typeof操作符、Object.prototype.toString.call()方法、instanceof操作符等。</span>
-        <span>
+        <span>39、判断一个变量是否是数组，有哪些办法？</span>
+        <span>答案：39、判断一个变量是否是数组可以使用Array.isArray()方法、instanceof操作符、Object.prototype.toString.call()方法等。</span>
+
+        <span>40、判断一个变量是否是对象，有哪些办法？</span>
+        <span>答案：40、判断一个变量是否是对象可以使用typeof操作符、Object.prototype.toString.call()方法、instanceof操作符等。</span>
+
+        <span>41、对象/数组常用方法有哪些？</span>
+        <span>答案：
             41、对象常用方法有Object.keys()、Object.values()、Object.entries()、Object.assign()、Object.freeze()、Object.seal()等；数
             组常用方法有push、pop、shift、unshift、splice、slice、concat、join、map、filter、reduce等。</span>
-        <span>
+        <span>42、创建一个空数组/空对象有哪些方式？</span>
+        <span>答案：
             42、创建一个空数组可以使用[]或者new Array()；创建一个空对象可以使用{}或者new Object()。
-        </span>   
-        <span>43、改变原数组的遍历方式有forEach、map、filter、reduce等。</span>
-        <span>44、Set是ES6中的一种数据结构，它类似于数组，但是成员的值是唯一的；Map也是ES6中的一种数据结构，它类似于对象，但是键可以是任意类型。</span>
-        <span>
+        </span>
+        <span>43、哪些遍历方式会改变原数组？</span>
+        <span>答案：43、改变原数组的遍历方式有forEach、map、filter、reduce等。</span>
+
+        <span>44、Set和Map各是什么？</span>
+        <span>答案：44、Set是ES6中的一种数据结构，它类似于数组，但是成员的值是唯一的；Map也是ES6中的一种数据结构，它类似于对象，但是键可以是任意类型。</span>
+
+        <span>45、介绍一下promise。</span>
+        <span>答案：
             45、Promise是JavaScript的一种异步编程解决方案，它表示一个异步操作的最终结果。Promise有三种状态，分别是pending、fulfilled和
             rejected。可以通过then方法和catch方法来处理Promise的结果和错误。Promise可以解决回调地狱的问题，使异步代码更加可读和可维护。
+        </span>
+        <span>
+            46、Promise通常会解决三种问题
+            (1)链式回调(2)同时发起几个异步请求，谁先有结果就拿谁的(3)发起多个请求，等到所有请求后再做下一步处理
+            这三种方式promise是怎么处理的？
+        </span>
+        <span>答案：46、Promise可以通过then方法和catch方法进行链式回调，可以使用Promise.all方法同时发起几个异步请求，等到所有请求完成后再进行下一步处理，
+            可以使用Promise.race方法谁先有结果就拿谁的。
+        </span>
+        <span>47、如何改变一个函数a的上下文？</span>
+        <span>答案：47、可以使用函数的apply、call、bind方法来改变函数的上下文。</span>
+        <span>48、Call和replay有什么区别？</span>
+        <span>答案：48、Call和apply都是用来改变函数的上下文并立即执行函数，它们的区别在于传递参数的方式不同，call是一个一个传参，apply是将参数放在数组中传
+            递；而bind方法是将函数的上下文绑定到一个新的函数中，不会立即执行函数。
+        </span>
+        <span>49、Evenbus是什么东西？</span>
+        <span>答案：49、EventBus是一种事件总线，是一种通信机制，可以在不同组件之间传递信息，可以使用emit方法触发事件，使用on方法监听事件。</span>
+        <span>50、Vue中普通的生命周期大概有哪些？</span>
+        <span>答案：50、Vue中普通的生命周期有beforeCreate、created、beforeMount、mounted、beforeUpdate、updated、beforeDestroy、destroyed。</span>
+        <span>51、父子组件生命周期执行顺序是怎么样的？</span>
+        <span>答案：51、父子组件生命周期执行顺序是先父后子，即父组件的生命周期钩子会在子组件的生命周期钩子之前执行。</span>
+        <span>52、mixins有几个生命周期阶段？</span>
+        <span>答案：52、mixins有两个生命周期阶段，分别是beforeCreate和created。</span>
+        <span>53、弹性布局，一行两列，一列固定宽，如何实现？</span>
+        <span>答案：53、可以使用flex布局，将父元素的display属性设置为flex，然后设置flex-direction为row，即一行两列的布局；然后在第一列的子元素中设置固定宽
+            度，可以使用flex-basis属性来设置。
         </span>
     </p>
 </body>
