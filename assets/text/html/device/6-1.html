@@ -93,7 +93,6 @@
         <span>51、父子组件生命周期执行顺序是怎么样的？</span>
         <span>52、mixins有几个生命周期阶段？</span>
         <span>53、弹性布局，一行两列，一列固定宽，如何实现？</span>
-        <span>54、Flex：1 包含哪三种属性</span>
     </p>
     <h4>集合一答案：</h4>
     <p>
@@ -195,6 +194,73 @@
             常用于输入框输入时的搜索功能，避免频繁发送请求。
             - 节流：在一段时间内只能触发一次函数执行，无论触发频率有多高。常用于滚动事件、resize事件等高频触发的事件，减少函数执行的频率。
             实现防抖可以使用setTimeout和clearTimeout来延迟函数的执行，实现节流可以使用setTimeout和clearTimeout来控制函数的执行间隔。
+        </span>
+        <span>
+            16、Vue的导航守卫包括全局守卫、路由独享守卫和组件内守卫。全局守卫包括beforeEach、beforeResolve和afterEach；路由独享守
+            卫包括beforeEnter；组件内守卫包括beforeRouteEnter、beforeRouteUpdate和beforeRouteLeave。
+        </span>
+        <span>17、登录拦截一般实现方式是在路由守卫中判断用户是否已登录，如果未登录则跳转到登录页面。</span>
+        <span>18、我用过ECharts和Highcharts，用的还比较多。</span>
+        <span>
+            19、闭包是指有权访问另一个函数作用域中变量的函数。在JavaScript中，闭包可以通过函数嵌套来实现。一个函数内部定义了另一个函数，
+            并且内部函数可以访问外部函数的变量，这个内部函数就是一个闭包。
+        </span>
+        <span>
+            20、Vue3.0相比Vue2.0有很多改进，主要包括性能优化、CompositionAPI、TypeScript支持、全局API修改等。其中最大的改进是使用Proxy
+            代替Object.defineProperty来实现响应式数据，这使得Vue3.0的性能得到了很大的提升。
+        </span>
+        <span>21、Vue常用的指令包括v-if、v-show、v-for、v-bind、v-on、v-model等。</span>
+        <span>22、v-if和v-show都可以控制元素的显示和隐藏，但是v-if是将元素从DOM中删除，而v-show是将元素的display属性设置为none。</span>
+        <span>23、v-for需要加一个key是为了帮助Vue识别每个节点的身份，从而在更新虚拟DOM时可以更高效地比较节点的差异，提高性能。</span>
+        <span>24、封装一个组件一般需要考虑组件的props、data、methods、computed、watch等属性，还需要考虑组件的生命周期函数和样式。</span>
+        <span>25、我从0到1搭建过多个项目，包括前端项目和后端项目。</span>
+        <span>26、我用过uni-app，它是一个基于Vue的跨平台开发框架，可以快速开发小程序、H5、App等多个平台的应用。</span>
+        <span>27、我会写后台，但是没有搞过服务端渲染。</span>
+        <span>28、我在项目中遇到的难点主要是性能问题和跨域问题，我通过优化代码和使用代理服务器等方式解决了这些问题。</span>
+        <span>
+            29、Url到浏览器的一个过程包括DNS解析、建立TCP连接、发送HTTP请求、服务器响应HTTP请求、浏览器解析HTML、构建DOM树、构建CSSOM树、
+            合并DOM和CSSOM树、渲染页面、执行JavaScript等步骤。
+        </span>
+        <span>
+            30、小程序的request封装及拦截可以通过封装一个wx.request的函数来实现，然后在这个函数中添加拦截器，例如在请求前添加loading效果，
+            在请求后添加错误处理等。
+        </span>
+        <span>
+            31、如果不使用框架封装Vue项目，可以手动创建组件、指令和过滤器，使用原生JavaScript进行事件绑定和DOM操作，手动管理组件的生命周期等。
+            可以按照Vue的设计思想和规范，自己实现数据绑定、组件通信等功能。
+        </span>
+        <span>
+            32、JavaScript的原型是每个对象都具有的属性，它指向另一个对象，这个对象称为原型对象。原型链是JavaScript中对象之间的关系，每个对象
+            都有一个原型，通过原型链可以访问到其他对象的属性和方法。
+        </span>
+        <span>33、组件通讯方式有props和$emit、$parent和$children、$attrs和$listeners、provide和inject、vuex、事件总线等。</span>
+        <span>34、使用闭包可以实现许多功能，比如封装私有变量、实现模块化、实现函数柯里化等。</span>
+        <span>
+            35、作用域是指在程序中定义变量的区域，它决定了变量的可见性和生命周期。作用域分为全局作用域和局部作用域，JavaScript中的作用域是词
+            法作用域，即由代码的位置决定变量的作用域。
+        </span>
+        <span>36、操作数组的方式有push、pop、shift、unshift、splice、slice、concat、join、map、filter、reduce等。</span>
+        <span>
+            37、0.1 + 0.2 不等于 0.3，这是因为JavaScript中使用IEEE 754标准来表示浮点数，而浮点数的精度有限，会导致精度丢失。可以通过将浮点
+            数转换为整数进行计算，然后再将结果转换为浮点数来解决这个问题。
+        </span>
+        <span>
+            38、keep-alive是Vue的一个内置组件，用于缓存动态组件或者路由组件，可以在组件切换时保留组件的状态，提高组件的性能。它有两个生命周
+            期阶段，分别是activated和deactivated。
+        </span>
+        <span>39、判断一个变量是否是数组可以使用Array.isArray()方法、instanceof操作符、Object.prototype.toString.call()方法等。</span>
+        <span>40、判断一个变量是否是对象可以使用typeof操作符、Object.prototype.toString.call()方法、instanceof操作符等。</span>
+        <span>
+            41、对象常用方法有Object.keys()、Object.values()、Object.entries()、Object.assign()、Object.freeze()、Object.seal()等；数
+            组常用方法有push、pop、shift、unshift、splice、slice、concat、join、map、filter、reduce等。</span>
+        <span>
+            42、创建一个空数组可以使用[]或者new Array()；创建一个空对象可以使用{}或者new Object()。
+        </span>   
+        <span>43、改变原数组的遍历方式有forEach、map、filter、reduce等。</span>
+        <span>44、Set是ES6中的一种数据结构，它类似于数组，但是成员的值是唯一的；Map也是ES6中的一种数据结构，它类似于对象，但是键可以是任意类型。</span>
+        <span>
+            45、Promise是JavaScript的一种异步编程解决方案，它表示一个异步操作的最终结果。Promise有三种状态，分别是pending、fulfilled和
+            rejected。可以通过then方法和catch方法来处理Promise的结果和错误。Promise可以解决回调地狱的问题，使异步代码更加可读和可维护。
         </span>
     </p>
 </body>
