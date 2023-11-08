@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有游戏</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px 0;
+            transition: all .5s;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all .5s;
+        }
+
+        a:hover {
+            color: red !important;
+        }
+
+        nav ul {
+            width: 800px;
+            height: 60px;
+            line-height: 60px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1000px;
+            background: url('https://ts1.cn.mm.bing.net/th/id/R-C.c722a42820bbb07d0c4c926ea430c3e6?rik=pJXbs2I0C3zFfQ&riu=http%3a%2f%2fe.hiphotos.baidu.com%2fzhidao%2fpic%2fitem%2f4bed2e738bd4b31ccb91649186d6277f9e2ff86f.jpg&ehk=08P5IrHCfc2ntZ2aq9BZ7lc2tZSZS%2f3717iYzLDVPOs%3d&risl=&pid=ImgRaw&r=0') no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        header.active {
+            background-color: #fff;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./dist/index.html" target="_blank">贪吃蛇</a></li>
+                <li><a href="./dist1/index.html" target="_blank">闯关的小鸟</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bg"></div>
+    <script>
+        window.addEventListener("scroll", () => {
+            let header = document.querySelector("header");
+            let a = document.querySelectorAll("a")
+            if (document.documentElement.scrollTop >= 100 || document.body.scrollTop >= 100) {
+                a.forEach(item => {
+                    item.style.color = "#000";
+                })
+                header.classList.add("active");
+            } else {
+                header.classList.remove("active");
+                a.forEach(item => {
+                    item.style.color = "#fff";
+                })
+            }
+        });
+
+    </script>
+</body>
+
+</html>
