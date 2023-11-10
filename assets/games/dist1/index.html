@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
             top: 230px;
             width: 30px;
             height: 30px;
-            left: 50%;
+            left: 52%;
         }
 
         #contaner h2 {
@@ -30,7 +31,7 @@
             cursor: pointer;
             top: 290px;
             position: absolute;
-            left: 50%;
+            left: 45%;
             margin-left: -30px;
             animation: bound 0.3s ease-in-out 0s infinite alternate;
         }
@@ -66,6 +67,10 @@
             display: none;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         #mask {
             position: fixed;
             top: 0;
@@ -95,25 +100,88 @@
         #contaner #co {
             color: #fff;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 40px;
             position: fixed;
             top: 0;
             left: 50%;
             z-index: 99;
         }
+
+        #continue {
+            position: relative;
+            color: red;
+            font-size: 50px;
+            margin-top: 100px;
+            font-weight: bold;
+            cursor: pointer;
+            display: none;
+            z-index: 10000;
+        }
+
+        #count3 {
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            font-size: 140px;
+            color: red;
+            display: none;
+            z-index: 100;
+        }
+
+        #co {
+            font-size: 50px;
+        }
+
+        #play {
+            font-size: 50px;
+            position: relative;
+            top: 350px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+        }
+
+        #play a {
+            color: #fff;
+        }
+
+        #play a:hover {
+            color: red;
+        }
+        #al {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            color: #fff;
+            background: url(images/01.jpg) no-repeat;
+            background-size: cover;
+            display: none;
+            opacity: 0.8;
+            z-index: 100000;
+        }
     </style>
 <script defer src="bundle.js"></script></head>
+
 <body>
     <div id="contaner">
         <p id="co"></p>
         <div id="bird"></div>
-        <h2 id="new">按下ESC键开始</h2>
+        <h2 id="new">按下ESC键开始新游戏<span id="no">/按下Q键继续游戏</span></h2>
         <div id="mask"></div>
         <div id="success">
             <h1>Game Over</h1>
-            <span>You Results:</span>
+            <span>最终得分:</span>
             <p id="results"></p>
         </div>
+        <div id="continue">继续</div>
+        <div id="count3">3</div>
+        <div id="play"><a href="">重新开始</a></div>
+        <div id="al"></div>
     </div>
 </body>
+
 </html>
