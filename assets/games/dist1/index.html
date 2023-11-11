@@ -148,11 +148,12 @@
         #play a:hover {
             color: red;
         }
+
         #al {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             width: 200px;
             height: 200px;
             font-size: 30px;
@@ -163,8 +164,15 @@
             opacity: 0.8;
             z-index: 100000;
         }
+        .du {
+            width: 200px;
+            margin: 0 auto;
+            font-size: 18px;
+            text-align: center;
+        }
     </style>
-<script defer src="bundle.js"></script></head>
+    <script defer src="bundle.js"></script>
+</head>
 
 <body>
     <div id="contaner">
@@ -181,8 +189,12 @@
         <div id="count3">3</div>
         <div id="play"><a href="">重新开始</a></div>
         <div id="al"></div>
+
     </div>
-    <script src="index.js"></script>
+    <div class="du">
+        游戏说明：<br>
+        空格键飞翔/回车键暂停
+    </div>
 </body>
 
 </html>
