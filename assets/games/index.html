@@ -10,9 +10,11 @@
             padding: 0;
             margin: 0;
         }
-body{
-    background-color: #ccc;
-}
+
+        body {
+            background-color: #ccc;
+        }
+
         ul,
         ol {
             list-style: none;
@@ -24,6 +26,7 @@ body{
             width: 100%;
             padding: 10px 0;
             transition: all .5s;
+            z-index: 10;
         }
 
         a {
@@ -56,9 +59,46 @@ body{
             background-size: cover;
             z-index: -1;
         }
+
         header.active {
-            background-color: #fff;
+            background-color: #333;
             padding: 0;
+        }
+
+        .dist {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 120px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        video {
+            width: 600px;
+            border-radius: 12px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .dist h2 {
+            margin: 10px 0;
+            margin-left: 40px;
+        }
+        a.play {
+            display: block;
+            color: green !important;
+            margin: 10px 0;
+        }
+        .list ul {
+            width: 400px;
+        }
+        .tan {
+            width: 300px;
         }
     </style>
 </head>
@@ -67,15 +107,67 @@ body{
     <header>
         <nav>
             <ul>
+                <li><a href="../../index.html">返回首页</a></li>
                 <li><a href="./dist/index.html" target="_blank">贪吃蛇</a></li>
                 <li><a href="./dist1/index.html" target="_blank">飞翔的小鸟</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section >
+        <section class="dist">
+            <div>
+                <h2>贪吃蛇小游戏介绍</h2>
+                <div class="list">
+                    <video controls class="tan">
+                        <source src="./assets/03.mp4" type="video/mp4">
+                    </video>
+                    <ul>
+                        <li>游戏玩法：</li>
+                        <li>
+                            按 ↑ ↓ ← → 任意键开始游戏， ↑ ↓ ← → 键控制方向
+                        </li>
+                        <li>游戏特色：</li>
+                        <li>
+                            考验反应力、手速，随着等级的提升，速度也会越来越快，食物会随机刷新，快来试试吧
+                        </li>
+                        <li><a href="./dist1/index.html" class="play">立即游玩</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div>
+                <h2>飞翔的小鸟小游戏介绍</h2>
+                <div class="list">
+                    <video controls>
+                        <source src="./assets/01.mp4" type="video/mp4">
+                    </video>
+                    <ul>
+                        <li>游戏玩法：</li>
+                        <li>
+                            按下ESC键开始新游戏/按下q键继续游戏
+                        </li>
+                        <li>按下回车键暂停游戏</li>
+                        <li>如果不是死亡原因造成的退出游戏，可以继续游戏</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <video controls>
+                        <source src="./assets/02.mp4" type="video/mp4">
+                    </video>
+                    <ul>
+                        <li>游戏特色：</li>
+                        <li>
+                            可以肆意的展示您的反应速度，此游戏可无限飞翔
+                        </li>
+                        <li>如果玩累了可以暂停游戏或者直接退出，下次游玩还可以继续您上次的游戏</li>
+                        <li>随着分数的提高还有不同的鼓励信息，还等什么点击下方按钮立即开玩</li>
+                        <li><a href="./dist1/index.html" class="play" target="_blank">立即游玩</a></li>
+                    </ul>
+                </div>
+            </div>
 
         </section>
+
     </main>
     <div class="bg"></div>
     <script>
